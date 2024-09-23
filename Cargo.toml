@@ -1,0 +1,6 @@
+[workspace]
+resolver = "2"
+members = ["crates/*"]
+
+[workspace.dependencies]
+beeswax-types = { path = "crates/beeswax-types" }

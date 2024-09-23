@@ -1,0 +1,5 @@
+version: "3"
+tasks:
+  generate:
+    cmds:
+      - echo "Generating rust definitions"
