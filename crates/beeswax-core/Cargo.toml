@@ -4,4 +4,10 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-beeswax-types.workspace = true
+beeswax-types = { path = "../beeswax-types" }
+tonic = "0.12.2"
+tokio-stream = "*"
+tokio = { version = "1", features = ["full"] }
+prost = "0.13"
+prost-types = "0.13"
+tracing = { version = "*" }

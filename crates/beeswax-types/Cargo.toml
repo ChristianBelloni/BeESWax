@@ -17,36 +17,12 @@ bench = []
 [package]
 edition = "2021"
 name = "beeswax-types"
-version = "1.709.0"
-authors = ["mechiru <u9053u6d41@gmail.com>"]
-build = false
-autobins = false
-autoexamples = false
-autotests = false
-autobenches = false
-description = "This library generated from googleapis/googleapis using tonic-build."
-documentation = "https://mechiru.github.io/google-api-proto/google_api_proto/index.html"
-readme = "../README.md"
-keywords = ["google", "api", "googleapis", "gcloud", "gcp"]
-categories = ["api-bindings"]
-license = "MIT OR Apache-2.0"
-repository = "https://github.com/mechiru/google-api-proto"
-
-[package.metadata.docs.rs]
-all-features = true
-
-[lib]
-name = "google_api_proto"
-path = "src/lib.rs"
-doctest = false
 
 [dependencies]
 prost = "0.13"
 prost-types = "0.13"
 tonic = "0.12"
 
-[features]
-cloud-kubernetes-security-containersecurity_logging = []
-default = ["google-devtools-build-v1"]
-google-devtools-build-v1 = ["google-api"]
-google-api = []
+[build-dependencies]
+prost-build = "0.13.3"
+walkdir = "*"

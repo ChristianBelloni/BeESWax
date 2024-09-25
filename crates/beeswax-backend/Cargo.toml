@@ -1,0 +1,15 @@
+[package]
+name = "beeswax-backend"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+beeswax-core = { path = "../beeswax-core" }
+axum = { version = "0.7.6", features = ["macros"] }
+tokio = { version = "1", features = ["full"] }
+tonic = "0.12.2"
+tower = { version = "0.5.1", features = ["steer", "util"] }
+tower-http = { version = "0.6.1", features = ["fs", "trace"] }
+http-body-util = "0.1.2"
+axum_tonic = { git = "https://github.com/ChristianBelloni/axum-tonic.git" }
+tracing = "*"
