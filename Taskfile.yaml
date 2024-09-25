@@ -3,3 +3,7 @@ tasks:
   generate:
     cmds:
       - echo "Generating rust definitions"
+  build_ui:
+    dir: frontend
+    cmds:
+      - npm run build
